@@ -12,6 +12,7 @@ import EmployersDashboard from "./pages/Employer/EmployersDashboard";
 import JobPostingFrom from "./pages/Employer/JobPostingForm";
 import ManageJobs from "./pages/Employer/ManageJobs";
 import ApplicationViewer from "./pages/Employer/ApplicationViewer";
+import EmployerProfilePage from "./pages/Employer/EmployerProfilePage";
 
 const App = () => {
   return (
