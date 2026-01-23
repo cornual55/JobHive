@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Rubik", sans-serif;
+  --breakpoint-3xl: 120rem; /* 1920px */
+  --color-primary: #00a7f3;
+}
+
+@layer base {
+  html {
+    font-family: ver(--font-display);
+  }
+
+  body {
+    background-color: #f7fafe;
+    overflow-x: hidden;
+  }
+}
