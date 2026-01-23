@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+import { Navigate, Outlet, useLocation } from "react-router";
 
-const ProtectedRoute = () => {
-  return (
-    <div>ProtectedRoute</div>
-  )
-}
+const ProtectedRoute = ({ requiredRole }) => {
+  // будет сделано позже
+  return <Outlet />;
+};
 
-export default ProtectedRoute
+export default ProtectedRoute;
