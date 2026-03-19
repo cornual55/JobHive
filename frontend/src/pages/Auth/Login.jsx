@@ -9,6 +9,7 @@ import {
   Lock,
   Mail,
 } from "lucide-react";
+import { validateEmail } from "../../utils/helper";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -23,14 +24,6 @@ const Login = () => {
     showPassword: false,
     success: false,
   });
-
-  const validateEmail = (email) => {
-    if (!email.trim()) return "Укажите электронную почту";
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) return "Укажите верную электронную почтую";
-    return "";
-  };
 
   const validatePassword = (password) => {
     if (!password) return "Укажите пароль";
