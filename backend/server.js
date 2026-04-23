@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import path from "node:path";
 import connectDB from "./config/db.js";
-// import { authRoutes } from "./routes/authRoutes";
+import { authRoutes } from "./routes/authRoutes.js";
 
 const app = express();
 
@@ -23,7 +23,7 @@ connectDB();
 app.use(express.json());
 
 // Routes
-// app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 // Server upload folder
 app.use(
